@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+/* Custom styles for Jack's On The River */
+.outline-light-top {
+  border-top: 1px solid #e5e7eb;
+}
