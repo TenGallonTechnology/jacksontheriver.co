@@ -1,6 +1,10 @@
 <script setup lang="ts">
 const navLinks = [
-  { label: 'Directions', to: 'https://goo.gl/maps/AAatoaujzVWKcSqG6', external: true },
+  {
+    label: 'Directions',
+    to: 'https://goo.gl/maps/AAatoaujzVWKcSqG6',
+    external: true
+  },
   { label: 'About', to: '#about' },
   { label: 'Menu', to: '#menu' }
 ]
@@ -93,17 +97,20 @@ const mobileMenuOpen = ref(false)
 
         <!-- About Section -->
         <section id="about" class="mb-8">
-          <h3 class="text-center text-2xl font-semibold flex items-center justify-center gap-2 mb-4">
+          <h3
+            class="text-center text-2xl font-semibold flex items-center justify-center gap-2 mb-4"
+          >
             About
             <UIcon name="i-heroicons-information-circle" class="w-6 h-6" />
           </h3>
           <p class="text-gray-700 leading-relaxed">
-            Jack's on the River is considered by many, in and around the Laurens county area to be a
-            hidden gem. The rustic restaurant originated in 1967 serving BBQ and later introducing
-            fried catfish to the menu, which became a hit. Jack's is now known for their delicious
-            Catfish, Steak &amp; Seafood, as well as many other famous menu options. So, if you're ever
-            craving some great food along with a family-friendly environment, come try Jack's on the
-            River!
+            Jack's on the River is considered by many, in and around the Laurens
+            county area to be a hidden gem. The rustic restaurant originated in
+            1967 serving BBQ and later introducing fried catfish to the menu,
+            which became a hit. Jack's is now known for their delicious Catfish,
+            Steak &amp; Seafood, as well as many other famous menu options. So,
+            if you're ever craving some great food along with a family-friendly
+            environment, come try Jack's on the River!
           </p>
         </section>
 
@@ -115,7 +122,9 @@ const mobileMenuOpen = ref(false)
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-4">
       <UContainer>
-        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-4"
+        >
           <small>©Jack's On The River 2023</small>
 
           <div class="text-center">
@@ -130,7 +139,7 @@ const mobileMenuOpen = ref(false)
             />
           </div>
 
-          <ULink to="https://www.TenGallon.tech" external>
+          <ULink to="https://www.Tengallontechnology.com" external>
             <NuxtImg
               src="/TenGallonTech.png"
               alt="Ten Gallon Tech Logo"
