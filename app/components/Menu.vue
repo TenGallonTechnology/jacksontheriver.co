@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { menuData } from '~/data/menuData'
+import { menuData, menuNotes } from '~/data/menuData'
 
 const formatPrice = (price: number | string) => {
   if (typeof price === 'number') {
@@ -18,9 +18,10 @@ const formatPrice = (price: number | string) => {
         <UIcon name="i-heroicons-list-bullet" class="w-6 h-6" />
       </h3>
       <p class="text-center text-sm mt-2">
-        All Plates Served with Hushpuppies and a choice of two sides:<br />
-        coleslaw, potato things, plain or cheese grits, salad, baked potato,
-        french fries, sweet potato fries, baked sweet potato.
+        All Plates Served with Hushpuppies and 2 Sides of Your Choice:<br />
+        slaw, potato thins, plain or cheese grits, side salad, baked potato,
+        french fries, sweet potato fries, baked sweet potato, green beans,
+        fried okra.
       </p>
     </div>
 
@@ -53,6 +54,14 @@ const formatPrice = (price: number | string) => {
           </template>
         </UCard>
       </div>
+    </div>
+
+    <!-- Menu Notes -->
+    <div class="m-4 p-4 rounded-lg bg-neutral-50 border border-neutral-200">
+      <h4 class="text-center text-xl font-semibold mb-2">Good to Know</h4>
+      <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+        <li v-for="note in menuNotes" :key="note">{{ note }}</li>
+      </ul>
     </div>
   </section>
 </template>
